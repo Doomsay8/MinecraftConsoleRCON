@@ -1,7 +1,7 @@
 # Minecraft-RCON
-Simple Minecraft RCON Web Console (using PHP, Bootstrap and Javascript) 
+Simple Web Console de Minecraft RCON (en utilisant PHP, Bootstrap et Javascript)
 
-Inspired by [Minecraft-RCON-Console](https://github.com/ekaomk/Minecraft-RCON-Console) and using [PHP-Minecraft-Rcon](https://github.com/thedudeguy/PHP-Minecraft-Rcon).
+Inspiré par [Minecraft-RCON-Console](https://github.com/ekaomk/Minecraft-RCON-Console) et en utilisant [PHP-Minecraft-Rcon](https://github.com/thedudeguy/PHP-Minecraft-Rcon).
 
 ![Sample](samples/sample.png)
 
@@ -9,18 +9,18 @@ Inspired by [Minecraft-RCON-Console](https://github.com/ekaomk/Minecraft-RCON-Co
 
 ## Configuration
 
-1. Edit your Minecraft server `server.properties` configuration file in order to enable RCON:
+1. Modifier votre `server.properties` fichier de configuration pour ACTIVER RCON:
 ```
 enable-rcon=true
-rcon.port=25575
-rcon.password=xtMJsVtmx0XypuId7jIb
+rcon.port=25575 (Laisser le port par defaut)
+rcon.password=Mettre un mot de passe
 ```
-2. Restart your Minecraft server.
-3. Download/Clone the Minecraft RCON Web Console files and edit the `config.php` file. Use the same rcon password and port than the one set in `server.properties`:
+2. Redémarrer votre serveur.
+3. Téléchargez / clonez les fichiers de la console Web Minecraft RCON et éditez le fichier `config.php`. Utilisez le même mot de passe et le même port rcon que celui défini dans `server.properties`:
 ```
 $rconHost = "localhost";
-$rconPort = 25575;
-$rconPassword = "xtMJsVtmx0XypuId7jIb";
+$rconPort = port définie sur server.properties;
+$rconPassword = "Mot de passe définie sur server.properties";
 ```
 
 ## Warnings
